@@ -45,8 +45,8 @@ export default function WalletPassGenerator() {
 
       // Assuming the API returns a JSON object with the S3 URL, e.g., { url: "..." }
       // Adjust 'data.url' if the key is different
-      if (data.url) {
-        setPassUrl(data.url);
+      if (data.download_url) {
+        setPassUrl(data.download_url);
       } else {
         console.error("URL not found in response", data);
       }
